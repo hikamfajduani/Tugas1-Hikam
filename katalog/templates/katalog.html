@@ -20,15 +20,14 @@
       <th>Item URL</th>
     </tr>
     {% comment %} Add the data below this line {% endcomment %}
-    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
-    {% for barang in list_barang %}
+    {% for item in catalogitem %}
         <tr>
-            <th>{{barang.item_name}}</th>
-            <th>{{barang.item_price}}</th>
-            <th>{{barang.item_stock}}</th>
-            <th>{{barang.rating}}</th>
-            <th>{{barang.description}}</th>
-            <th>{{barang.item_url}}</th>
+            <th>{{item.item_name}}</th>
+            <th>{{item.item_price}}</th>
+            <th>{{item.item_stock}}</th>
+            <th>{{item.rating}}</th>
+            <th>{{item.description}}</th>
+            <th>{{item.item_url}}</th>
         </tr>
     {% endfor %}
   </table>
